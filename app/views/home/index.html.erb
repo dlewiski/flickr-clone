@@ -1,2 +1,5 @@
-<%= render('layouts/menu') %>
 <h2>home page</h2>
+
+<% @users.each do |user| %>
+<%= user.avatar_file_name %>
+<% end %>
