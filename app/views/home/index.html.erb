@@ -3,3 +3,11 @@
 <% @users.each do |user| %>
 <%= user.avatar_file_name %>
 <% end %>
+
+<ul>
+<% @posts.each do |image| %>
+  <li>
+    <%= image_tag image.url(:medium) %>
+  </li>
+<% end %>
+</ul>
